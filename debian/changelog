@@ -1,3 +1,12 @@
+pyjwt (1.7.1-2ubuntu2.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Signing key confusion via public key signature
+    - debian/patches/CVE-2022-29217.patch: update jwt/algorithms.py to
+      disallow using SSH keys as a HMAC secret.
+    - CVE-2022-29217
+
+ -- Alex Murray <alex.murray@canonical.com>  Tue, 19 Jul 2022 15:11:38 +0930
+
 pyjwt (1.7.1-2ubuntu2) focal; urgency=medium
 
   * Drop Python 2 package.
